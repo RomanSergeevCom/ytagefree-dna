@@ -14,17 +14,18 @@
   --bg:#0F1115;
   --panel:#161922;
   --card:#1A1D24;
-  --border:rgba(255,139,94,.15);
+  --border:rgba(240,164,55,.18);
   --fg:#E8EAED;
   --muted:#8A8F99;
-  --accent:#FF8B5E;
-  --accent2:#E5704A;
-  --accent-grad:linear-gradient(135deg,#FF8B5E,#E5704A);
+  --accent:#F0A437;          /* brand orange */
+  --accent-green:#A5C73D;    /* brand green */
+  --accent2:#D88E26;
+  --accent-grad:linear-gradient(135deg,#F0A437,#A5C73D);
   --lilya:#FF9466;
   --yura:#7BE8A4;
   --masha:#A78BFA;
   --olesk:#F0B429;
-  --success:#7BE8A4;
+  --success:#A5C73D;
   --warn:#F0B429;
   --error:#E05555;
 }
@@ -165,6 +166,7 @@ a:hover{text-decoration:underline}
 .m-ec p{color:var(--muted);font-size:13px}
 .m-ec .cta-stack{display:flex;flex-direction:column;gap:8px}
 .m-ec .cta-btn{background:var(--accent);color:var(--bg);font-family:'Montserrat';font-size:13px;font-weight:700;padding:10px 16px;border-radius:8px;text-align:center}
+.m-ec .cta-btn.green{background:var(--accent-green)}
 .m-ec .cta-btn.alt{background:transparent;border:1px solid var(--accent);color:var(--accent)}
 
 /* disclaimer_plate */
@@ -247,18 +249,26 @@ footer code{font-family:ui-monospace,Menlo,monospace;color:var(--accent);font-si
     </div>
     <div class="tile">
       <h3>🎨 Цветовой посыл</h3>
-      <p>Тёплый персиковый — фирменный цвет фонда, плюс 4 цвета спикеров.</p>
+      <p>Два бренд-цвета фонда — <b style="color:#F0A437">оранжевый</b> и <b style="color:#A5C73D">зелёный</b> — на тёмном фоне, плюс 4 цвета спикеров.</p>
     </div>
   </div>
 
   <h3 style="margin:32px 0 14px;font-family:Montserrat;font-size:16px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px">Палитра</h3>
   <div class="swatches">
     <div class="swatch">
-      <div class="swatch-color" style="background:#FF8B5E"></div>
+      <div class="swatch-color" style="background:#F0A437"></div>
       <div class="swatch-info">
-        <div class="swatch-name">Accent</div>
-        <div class="swatch-hex">#FF8B5E</div>
-        <div class="swatch-desc">Тёплый персиковый из логотипа фонда</div>
+        <div class="swatch-name">Brand orange</div>
+        <div class="swatch-hex">#F0A437</div>
+        <div class="swatch-desc">Бренд-оранжевый фонда (солнце в логотипе)</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#A5C73D"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Brand green</div>
+        <div class="swatch-hex">#A5C73D</div>
+        <div class="swatch-desc">Бренд-зелёный фонда (фон логотипа)</div>
       </div>
     </div>
     <div class="swatch">
@@ -266,7 +276,7 @@ footer code{font-family:ui-monospace,Menlo,monospace;color:var(--accent);font-si
       <div class="swatch-info">
         <div class="swatch-name">Accent dark</div>
         <div class="swatch-hex">#1B2144</div>
-        <div class="swatch-desc">Глубокий синий для контраста доверия</div>
+        <div class="swatch-desc">Глубокий синий для контраста доверия (опционально)</div>
       </div>
     </div>
     <div class="swatch">
@@ -292,6 +302,22 @@ footer code{font-family:ui-monospace,Menlo,monospace;color:var(--accent);font-si
         <div class="swatch-hex">#8A8F99</div>
         <div class="swatch-desc">Метаданные, подписи, второстепенный текст</div>
       </div>
+    </div>
+  </div>
+
+  <h3 style="margin:32px 0 14px;font-family:Montserrat;font-size:16px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px">Два бренд-цвета — где какой</h3>
+  <div class="tiles">
+    <div class="tile" style="border-left-color:#F0A437">
+      <h3 style="color:#F0A437">🟠 Оранжевый (primary)</h3>
+      <p>CTA «Помочь фонду», lower-third бортики для нейтральных мест, акцентные элементы UI, hover-состояния, ссылки. Главный «голос» канала.</p>
+    </div>
+    <div class="tile" style="border-left-color:#A5C73D">
+      <h3 style="color:#A5C73D">🟢 Зелёный (secondary)</h3>
+      <p>Success-плашки, метки «готово», иконки checklist, баланс на end-card (вторая CTA-кнопка), фон-секции с позитивными историями.</p>
+    </div>
+    <div class="tile">
+      <h3>⚫ Тёмный фон</h3>
+      <p><code>#0F1115</code> — основа всех экранов и thumbnails. Текст читается на нём контрастно, оба бренд-цвета играют ярко.</p>
     </div>
   </div>
 
@@ -544,7 +570,7 @@ footer code{font-family:ui-monospace,Menlo,monospace;color:var(--accent);font-si
         </div>
         <div class="cta-stack">
           <div class="cta-btn">starikam.org</div>
-          <div class="cta-btn alt">Подписаться</div>
+          <div class="cta-btn green">Подписаться</div>
         </div>
       </div>
     </div>
