@@ -1,0 +1,64 @@
+{
+  "speakers": [
+    {
+      "id": "lilya",
+      "name_short": "Лиля",
+      "name_full": "Лилия Майорова",
+      "color": "#FF9466",
+      "role": "Эксперт надомного отдела фонда «Старость в радость» (с 2018)",
+      "domain": ["питание", "лекарства", "эмоциональное выгорание", "уход за лежачими"],
+      "tone": "практичная, тёплая, материнская, голос опыта",
+      "screen_type_default": "talking_head",
+      "lower_third": {
+        "name": "Лилия Майорова",
+        "role": "эксперт «Старость в радость»",
+        "color_bar": "#FF9466"
+      },
+      "videos": ["YTAgeFree01", "YTAgeFree02", "YTAgeFree03", "YTAgeFree04"]
+    },
+    {
+      "id": "yura",
+      "name_short": "Юра",
+      "name_full": "Юрий Баев",
+      "color": "#7BE8A4",
+      "role": "Эксперт по технике и безопасности дома для пожилых",
+      "domain": ["безопасность", "деменция", "зрение", "слух", "ходунки", "трости"],
+      "tone": "конкретный, инженерный, без лишних слов, демонстрирует руками",
+      "screen_type_default": "split_screen",
+      "lower_third": {
+        "name": "Юрий Баев",
+        "role": "эксперт «Старость в радость»",
+        "color_bar": "#7BE8A4"
+      },
+      "videos": ["YTAgeFree05", "YTAgeFree06", "YTAgeFree07", "YTAgeFree08", "YTAgeFree09", "YTAgeFree10", "YTAgeFree11"]
+    },
+    {
+      "id": "masha",
+      "name_short": "Маша",
+      "name_full": "Маша (wrapper)",
+      "color": "#A78BFA",
+      "role": "Закадровый текст / нарратив-обёртки между блоками",
+      "domain": ["связки", "мотивация", "эмоциональный контекст"],
+      "tone": "мягкая, личная, исповедальная",
+      "screen_type_default": "voiceover_with_broll",
+      "lower_third": null,
+      "videos": ["YTAgeFree01", "YTAgeFree03", "YTAgeFree04", "YTAgeFree05", "YTAgeFree07", "YTAgeFree08", "YTAgeFree_S2_Teaser"]
+    },
+    {
+      "id": "olesk",
+      "name_short": "Олескина",
+      "name_full": "Елизавета Олескина",
+      "color": "#F0B429",
+      "role": "Директор и сооснователь фонда «Старость в радость»",
+      "domain": ["призыв к действию", "outro сезона", "пролежни / системные проблемы"],
+      "tone": "лидерская, призывная, эмоционально-сильная",
+      "screen_type_default": "talking_head",
+      "lower_third": {
+        "name": "Елизавета Олескина",
+        "role": "директор фонда «Старость в радость»",
+        "color_bar": "#F0B429"
+      },
+      "videos": ["YTAgeFree_S2_Teaser"]
+    }
+  ]
+}
